@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Carte</title>
+    <link rel="stylesheet" href="css.css">
+    <script src="js.js" async></script>
+</head>
+<body>
+    <div id=banniere>
+        <nav id="navbar">
+            <ul>
+                <li><a href="#">Accueil</a></li>
+                <li><a href="#">Contact</a></li>
+                <!-- Début du sous-menu déroulant -->
+                <li><a href="#">Desktop</a>
+                    <ul>
+                        <li><a href="#">HP</a></li>
+                        <li><a href="#">Dell</a></li>
+                        <li><a href="#">Asus</a></li>
+                    </ul>
+                </li>
+                <!-- Fin du sous-menu déroulant -->
+                <li><a href="#">Laptop</a>
+                    <ul>
+                        <li><a href="#">HP</a></li>
+                        <li><a href="#">Dell</a></li>
+                        <li><a href="#">Asus</a></li>
+                    </ul>
+                
+                </li>
+
+            </ul>
+            </nav>
+    </div>
+    <div id="nav_corp">
+        <div id="ban_gauche">
+                <nav id="nav_g">
+                    <ol>
+                      <li class="menu-deroulant">
+                      <li><a href="#">ACER</a></li>
+                      <li><a href="#">DELL</a></li>
+                      <li><a href="#">HP</a></li>
+                      <li><a href="#">ASUS</a></li>
+                      <li><a href="#">Sony</a></li>
+                      <li><a href="#">Samsung</a></li>
+                      <li><a href="#">HP Gamer</a></li>
+                      <li><a href="#">Hp server</a></li>
+                      <li><a href="#">Compaq</a></li>
+                      <li><a href="#">Printer</a></li>
+                      <li><a href="#">serveur dell</a></li>
+                      <li><a href="#">accessoire</a></li>
+                        </ol>
+        
+        </nav>
+        </div>
+
+    <div class = "corp">
+     <div id = "Mo1">
+        <img src="Mo1.PNG" alt="">
+    </div>
+    <div id ="btn1">
+        <button class="di1">Diesel</button>
+        <button class = "pannier">ajouter au pannier</button>
+        <!-- <button class="decrease-btn">-</button>
+        <input type="text" class="quantity-input" value="0">
+        <input type="number" id="Total" value="0" > -->
+        <!-- <button class="delete-btn">Del</button> -->
+        <button class="like-button" onclick="updateLikeCount()">Like</button>
+        <button onclick="calcule()">calcule</button>
+      <!-- <button onclick="calcule()">Calculate Total</button> -->
+      <button onclick="calcule()">calcule</button>
+     </div>
+
+     <div id = "Mo2">
+        <img src="Mo2.PNG" alt="">
+    </div>
+    <div id ="btn2">
+        <button class="di1">Diesel</button>
+        <button class = "pannier">ajouter au pannier</button>
+        <button class="like-button" onclick="updateLikeCount()">Like</button>
+        <button onclick="calcule()">calcule</button>
+
+     </div>
+     <div id = "Mo3">
+        <img src="Mo3.PNG" alt="">
+    </div>
+    <div id ="btn3">
+        <button class="di1">Diesel</button>
+        <button class = "pannier">ajouter au pannier</button>
+        <button class="like-button" onclick="updateLikeCount()">Like</button>
+        <button onclick="calcule()">calcule</button>
+     </div>
+     <div id = "Mo4">
+        <img src="Mo4.PNG" alt="">
+    </div>
+    <div id ="btn4">
+        <button class="di1">Diesel</button>
+        <button class = "pannier">ajouter au pannier</button>
+        <button class="like-button" onclick="updateLikeCount()">Like</button>
+        <button onclick="calcule()">calcule</button>
+     </div>
+     <div id = "Mo5">
+        <img src="Mo5.PNG" alt="">
+    </div>
+    <div id ="btn5">
+        <button class="di1">Diesel</button>
+        <button class = "pannier">ajouter au pannier</button>
+        <button class="like-button" onclick="updateLikeCount()">Like</button>
+        <button onclick="calcule()">calcule</button>
+     </div>
+     <div id = "Mo6">
+        <img src="Mo6.PNG" alt="">
+    </div>
+    <div id="btn6">
+        <button class="di1">Diesel</button>
+        <button class = "pannier">ajouter au pannier</button>
+        <button class="like-button" onclick="updateLikeCount()">Like</button>
+        <button onclick="calcule()">calcule</button>
+     </div>
+     <div id = "Mo7">
+        <img src="Mo7.PNG" alt="">
+    </div>
+    <div class ="btn7">
+        <button class="di1">Diesel</button>
+        <button class = "pannier">ajouter au pannier</button>
+        <button class="like-button" onclick="updateLikeCount()">Like</button>
+        <button onclick="calcule()">calcule</button>
+     </div>
+     <div id = "Mo8">
+        <img src="Mo8.PNG" alt="">
+    </div>
+    <div class ="btn8">
+        <button class="di1">Diesel</button>
+        <button class = "pannier">ajouter au pannier</button>
+        <button class="like-button" onclick="updateLikeCount()">Like</button>
+        <button onclick="calcule()">calcule</button>
+     </div>
+     <div id = "Mo9">
+        <img src="Mo9.PNG" alt="">
+    </div>
+    <div class ="btn9">
+        <button class="di1">Diesel</button>
+        <button class = "pannier">ajouter au pannier</button>
+        <button class="like-button" onclick="updateLikeCount()">Like</button>
+        <button onclick="calcule()">calcule</button>
+     </div>
+    </div>
+<div id="store">
+    <div id="titre">
+    <h1>Carte Shop</h1>
+    </div>
+
+
+    <div id="cart">
+        <input type="number" id="quantity-input" value="0"> 
+        <input type="number" id="price" value="10" >
+        <p id="Total"> Total</p>
+        <!-- <p id="like-count">0</p> -->
+    </div>
+</div>
+<script>
+function calcule(){
+ var Qty =document.getElementById('quantity-input').value;
+ console.log(Qty)
+ var total=document.getElementById('Total');
+ console.log(Total)
+ var pr =document.getElementById('price').value;
+ console.log(pr)
+total = Qty * pr
+return document.getElementById('Total').textContent=total
+}
+
+
+</script>
+</body>
+</html>
